@@ -149,3 +149,39 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--green);outline-offset
 .rv.on{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{opacity:1;transform:none;transition:none}}
 @media(max-width:760px){header b span{display:none}.s{padding-top:5.5rem}.hero{grid-template-columns:1fr;gap:2rem}.globe-panel{width:min(100%,380px)}}
+
+/* ==========================================================
+   FORCE OVERRIDE INLINE STYLES FOR FULL MOBILE RESPONSIVENESS
+   ========================================================== */
+
+@media screen and (max-width: 768px) {
+  /* 1. Force ALL inline Grids to collapse to 1 Column on Mobile */
+  div[style*="display: grid"],
+  div[style*="display:grid"] {
+    grid-template-columns: 1fr !important;
+    gap: 1.2rem !important;
+  }
+
+  /* 2. Force ALL inline fixed image heights to fit Mobile */
+  div[style*="grid-template-columns"] img,
+  div[style*="display: grid"] img,
+  .recap-grid-layout img {
+    width: 100% !important;
+    height: 160px !important;
+    object-fit: cover !important;
+  }
+
+  /* 3. Force padding of all cards to fit small screens */
+  .card, 
+  div[style*="padding: 1.6rem"],
+  div[style*="padding: 2.5rem"] {
+    padding: 1.2rem !important;
+  }
+
+  /* 4. Fix side overflow on Mobile */
+  div[style*="padding-left: 2.5rem"] {
+    padding-left: 1rem !important;
+    margin-left: 0 !important;
+    border-left: none !important;
+  }
+}
