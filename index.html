@@ -1203,238 +1203,168 @@ function switchEraTab(eraIndex) {
   </script>
 </section>
 
-<!-- Subtopic 01: Ethical and Contemporary Issues (Cyberpunk Floating Card Slider - BIGGER VERSION) -->
+<!-- Subtopic 01: Ethical and Contemporary Issues (Pure Horizontal Sideways Scroll) -->
 <section id="ethical-issues" style="padding-top: 2rem; width: 100%; box-sizing: border-box;">
   
   <!-- Section Badge & Title -->
   <div class="lab" style="display: flex; align-items: center; gap: 0.5rem; color: var(--accent-cyan); font-family: monospace; font-size: 0.95rem; letter-spacing: 1px; margin-bottom: 0.5rem;">
-    <i data-lucide="shield-alert" style="width: 18px; height: 18px;"></i> 
+    <i data-lucide="shield-alert" style="width: 18px; height: 18px;"></i>
     <span>SUBTOPIC 01: DEVELOPMENT OF MEDIA &amp; GLOBALIZATION</span>
   </div>
   
-  <h3 style="color: var(--accent-cyan); font-family: 'Oswald', sans-serif; font-size: 2.3rem; margin-bottom: 1.8rem; text-transform: uppercase; letter-spacing: 1px;">
+  <h3 style="color: var(--accent-cyan); font-family: 'Oswald', sans-serif; font-size: 2.3rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 1px;">
     04. ETHICAL AND CONTEMPORARY ISSUES
   </h3>
+  
+  <p style="color: var(--text-muted); font-size: 0.95rem; font-family: monospace; margin-bottom: 1.5rem;">
+    &lt;&lt; SWIPE SIDEWAYS TO EXPLORE ETHICAL ISSUES (05 CARDS) &gt;&gt;
+  </p>
 
-  <!-- Floating Carousel Wrapper (Increased max-width from 900px to 1100px) -->
-  <div class="ethical-carousel-wrapper" style="position: relative; max-width: 1100px; margin: 0 auto;">
-    
-    <!-- Outer Cyan Glowing Card Container (Increased padding & min-height) -->
-    <div class="ethical-card-container" style="position: relative; background: rgba(8, 14, 23, 0.95); border: 1.5px solid var(--accent-cyan); border-radius: 14px; padding: 2.5rem 2.8rem; box-shadow: 0 0 30px rgba(0, 229, 255, 0.18), inset 0 0 20px rgba(0, 229, 255, 0.05); min-height: 320px; box-sizing: border-box;">
+  <!-- PURE HORIZONTAL SIDEWAYS SCROLL CONTAINER -->
+  <div id="ethicalHorizontalViewport" style="display: flex; gap: 1.8rem; overflow-x: auto; scroll-behavior: smooth; padding-bottom: 1.5rem; -webkit-overflow-scrolling: touch; scroll-snap-type: x mandatory;">
 
-      <!-- CARD 1: ALGORITHMIC BIAS -->
-      <div class="ethical-slide active-slide">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
-          <h4 style="color: var(--accent-cyan); font-family: 'Oswald', sans-serif; font-size: 1.6rem; display: flex; align-items: center; gap: 0.7rem; margin: 0; letter-spacing: 0.5px;">
-            <i data-lucide="cpu" style="width: 24px; height: 24px;"></i> ALGORITHMIC BIAS
-          </h4>
-          <span style="font-family: monospace; font-size: 0.9rem; color: var(--accent-cyan); background: rgba(0, 229, 255, 0.1); padding: 0.35rem 0.8rem; border-radius: 6px; border: 1px solid rgba(0, 229, 255, 0.25);">ISSUE 01/05</span>
-        </div>
-        
-        <div class="slide-flex-body" style="display: grid; grid-template-columns: 1fr 280px; gap: 2rem; align-items: center;">
-          <div>
-            <p style="font-size: 1.1rem; color: #ffffff; line-height: 1.65; margin: 0 0 1.2rem 0; font-family: 'Playfair Display', serif;">
-              <strong>What it means:</strong> Algorithms decide what we see. They can repeat prejudice or show only what we agree with <i>(Pariser, 2011)</i>.
-            </p>
-            <div style="background: rgba(0, 0, 0, 0.45); border-left: 4px solid var(--accent-cyan); padding: 0.9rem 1.2rem; border-radius: 0 0.5rem 0.5rem 0; font-size: 0.95rem; color: var(--text-muted); line-height: 1.5;">
-              <strong style="color: #fff;">Examples:</strong> Biased search results <i>(Noble, 2018)</i>; facial analysis error rates <i>(Buolamwini &amp; Gebru, 2018)</i>.
-            </div>
-          </div>
-          <img src="bias.webp" alt="Algorithmic Bias" style="width: 100%; height: 175px; object-fit: cover; border-radius: 10px; border: 1.5px solid rgba(0, 229, 255, 0.35);">
-        </div>
+    <!-- CARD 1: ALGORITHMIC BIAS -->
+    <div class="ethical-card-item" style="flex: 0 0 clamp(300px, 85vw, 680px); scroll-snap-align: start; background: rgba(8, 14, 23, 0.95); border: 1.5px solid var(--accent-cyan); border-radius: 14px; padding: 2.2rem 2.5rem; box-shadow: 0 0 25px rgba(0, 229, 255, 0.15), inset 0 0 15px rgba(0, 229, 255, 0.05); min-height: 300px; box-sizing: border-box;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem;">
+        <h4 style="color: var(--accent-cyan); font-family: 'Oswald', sans-serif; font-size: 1.5rem; display: flex; align-items: center; gap: 0.7rem; margin: 0; letter-spacing: 0.5px;">
+          <i data-lucide="cpu" style="width: 24px; height: 24px;"></i>
+          ALGORITHMIC BIAS
+        </h4>
+        <span style="font-family: monospace; font-size: 0.85rem; color: var(--accent-cyan); background: rgba(0, 229, 255, 0.1); padding: 0.35rem 0.8rem; border-radius: 6px; border: 1px solid rgba(0, 229, 255, 0.25);">ISSUE 01/05</span>
       </div>
-
-      <!-- CARD 2: DATA OWNERSHIP -->
-      <div class="ethical-slide" style="display: none;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
-          <h4 style="color: var(--accent-cyan); font-family: 'Oswald', sans-serif; font-size: 1.6rem; display: flex; align-items: center; gap: 0.7rem; margin: 0; letter-spacing: 0.5px;">
-            <i data-lucide="database" style="width: 24px; height: 24px;"></i> DATA OWNERSHIP
-          </h4>
-          <span style="font-family: monospace; font-size: 0.9rem; color: var(--accent-cyan); background: rgba(0, 229, 255, 0.1); padding: 0.35rem 0.8rem; border-radius: 6px; border: 1px solid rgba(0, 229, 255, 0.25);">ISSUE 02/05</span>
-        </div>
-        
-        <div class="slide-flex-body" style="display: grid; grid-template-columns: 1fr 280px; gap: 2rem; align-items: center;">
-          <div>
-            <p style="font-size: 1.1rem; color: #ffffff; line-height: 1.65; margin: 0 0 1.2rem 0; font-family: 'Playfair Display', serif;">
-              <strong>What it means:</strong> Big tech collects and profits from billions of users' data without full user understanding <i>(Zuboff, 2019)</i>.
-            </p>
-            <div style="background: rgba(0, 0, 0, 0.45); border-left: 4px solid var(--accent-cyan); padding: 0.9rem 1.2rem; border-radius: 0 0.5rem 0.5rem 0; font-size: 0.95rem; color: var(--text-muted); line-height: 1.5;">
-              <strong style="color: #fff;">Example:</strong> Cambridge Analytica scandal (2018) harvesting personal data.
-            </div>
+      <div class="slide-flex-body" style="display: grid; grid-template-columns: 1fr 240px; gap: 1.5rem; align-items: center;">
+        <div>
+          <p style="font-size: 1.05rem; color: #ffffff; line-height: 1.6; margin: 0 0 1rem 0; font-family: 'Playfair Display', serif;">
+            <strong>What it means:</strong> Algorithms decide what we see. They can repeat prejudice or show only what we agree with <i>(Pariser, 2011)</i>[cite: 42].
+          </p>
+          <div style="background: rgba(0, 0, 0, 0.45); border-left: 4px solid var(--accent-cyan); padding: 0.8rem 1rem; border-radius: 0 0.5rem 0.5rem 0; font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">
+            <strong style="color: #fff;">Examples:</strong> Biased search results <i>(Noble, 2018)</i>; facial analysis error rates <i>(Buolamwini &amp; Gebru, 2018)</i>[cite: 42].
           </div>
-          <img src="data.avif" alt="Data Ownership" style="width: 100%; height: 175px; object-fit: cover; border-radius: 10px; border: 1.5px solid rgba(0, 229, 255, 0.35);">
         </div>
+        <img src="imgs/bias.webp" alt="Algorithmic Bias" style="width: 100%; height: 160px; object-fit: cover; border-radius: 10px; border: 1.5px solid rgba(0, 229, 255, 0.35);">
       </div>
-
-      <!-- CARD 3: MISINFORMATION -->
-      <div class="ethical-slide" style="display: none;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
-          <h4 style="color: var(--accent-cyan); font-family: 'Oswald', sans-serif; font-size: 1.6rem; display: flex; align-items: center; gap: 0.7rem; margin: 0; letter-spacing: 0.5px;">
-            <i data-lucide="alert-octagon" style="width: 24px; height: 24px;"></i> MISINFORMATION
-          </h4>
-          <span style="font-family: monospace; font-size: 0.9rem; color: var(--accent-cyan); background: rgba(0, 229, 255, 0.1); padding: 0.35rem 0.8rem; border-radius: 6px; border: 1px solid rgba(0, 229, 255, 0.25);">ISSUE 03/05</span>
-        </div>
-        
-        <div class="slide-flex-body" style="display: grid; grid-template-columns: 1fr 280px; gap: 2rem; align-items: center;">
-          <div>
-            <p style="font-size: 1.1rem; color: #ffffff; line-height: 1.65; margin: 0 0 1.2rem 0; font-family: 'Playfair Display', serif;">
-              <strong>What it means:</strong> False or manipulated content causes real-world harm <i>(Wardle &amp; Derakhshan, 2017)</i>.
-            </p>
-            <div style="background: rgba(0, 0, 0, 0.45); border-left: 4px solid var(--accent-cyan); padding: 0.9rem 1.2rem; border-radius: 0 0.5rem 0.5rem 0; font-size: 0.95rem; color: var(--text-muted); line-height: 1.5;">
-              <strong style="color: #fff;">Examples:</strong> COVID-19 "infodemic"; paid trolls in PH; AI deepfakes.
-            </div>
-          </div>
-          <img src="misinfo.webp" alt="Misinformation" style="width: 100%; height: 175px; object-fit: cover; border-radius: 10px; border: 1.5px solid rgba(0, 229, 255, 0.35);">
-        </div>
-      </div>
-
-      <!-- CARD 4: DIGITAL LITERACY -->
-      <div class="ethical-slide" style="display: none;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
-          <h4 style="color: var(--accent-cyan); font-family: 'Oswald', sans-serif; font-size: 1.6rem; display: flex; align-items: center; gap: 0.7rem; margin: 0; letter-spacing: 0.5px;">
-            <i data-lucide="check-circle-2" style="width: 24px; height: 24px;"></i> DIGITAL LITERACY
-          </h4>
-          <span style="font-family: monospace; font-size: 0.9rem; color: var(--accent-cyan); background: rgba(0, 229, 255, 0.1); padding: 0.35rem 0.8rem; border-radius: 6px; border: 1px solid rgba(0, 229, 255, 0.25);">ISSUE 04/05</span>
-        </div>
-        
-        <div class="slide-flex-body" style="display: grid; grid-template-columns: 1fr 280px; gap: 2rem; align-items: center;">
-          <div>
-            <p style="font-size: 1.1rem; color: #ffffff; line-height: 1.65; margin: 0 0 1.2rem 0; font-family: 'Playfair Display', serif;">
-              <strong>What it means:</strong> Users must evaluate, verify, and create content responsibly <i>(Livingstone, 2004)</i>.
-            </p>
-            <div style="background: rgba(0, 0, 0, 0.45); border-left: 4px solid var(--accent-cyan); padding: 0.9rem 1.2rem; border-radius: 0 0.5rem 0.5rem 0; font-size: 0.95rem; color: var(--text-muted); line-height: 1.5;">
-              <strong style="color: #fff;">Examples:</strong> Check sources, spot fake images, protect personal data.
-            </div>
-          </div>
-          <img src="digi.webp" alt="Digital Literacy" style="width: 100%; height: 175px; object-fit: cover; border-radius: 10px; border: 1.5px solid rgba(0, 229, 255, 0.35);">
-        </div>
-      </div>
-
-      <!-- CARD 5: REGULATION -->
-      <div class="ethical-slide" style="display: none;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
-          <h4 style="color: var(--accent-cyan); font-family: 'Oswald', sans-serif; font-size: 1.6rem; display: flex; align-items: center; gap: 0.7rem; margin: 0; letter-spacing: 0.5px;">
-            <i data-lucide="scale" style="width: 24px; height: 24px;"></i> REGULATION
-          </h4>
-          <span style="font-family: monospace; font-size: 0.9rem; color: var(--accent-cyan); background: rgba(0, 229, 255, 0.1); padding: 0.35rem 0.8rem; border-radius: 6px; border: 1px solid rgba(0, 229, 255, 0.25);">ISSUE 05/05</span>
-        </div>
-        
-        <div class="slide-flex-body" style="display: grid; grid-template-columns: 1fr 280px; gap: 2rem; align-items: center;">
-          <div>
-            <p style="font-size: 1.1rem; color: #ffffff; line-height: 1.65; margin: 0 0 1.2rem 0; font-family: 'Playfair Display', serif;">
-              <strong>What it means:</strong> Platforms work across borders, but national laws differ, making rules unclear.
-            </p>
-            <div style="background: rgba(0, 0, 0, 0.45); border-left: 4px solid var(--accent-cyan); padding: 0.9rem 1.2rem; border-radius: 0 0.5rem 0.5rem 0; font-size: 0.95rem; color: var(--text-muted); line-height: 1.5;">
-              <strong style="color: #fff;">Examples:</strong> EU GDPR vs. Philippines Data Privacy Act of 2012.
-            </div>
-          </div>
-          <img src="regu.webp" alt="Regulation" style="width: 100%; height: 175px; object-fit: cover; border-radius: 10px; border: 1.5px solid rgba(0, 229, 255, 0.35);">
-        </div>
-      </div>
-
     </div>
 
-    <!-- Bottom Controls: < BACK | Dots | NEXT > (Bigger buttons) -->
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1.8rem; padding: 0 0.2rem;">
-      
-      <!-- Back Button -->
-      <button onclick="changeEthicalSlide(-1)" class="cyber-card-btn" style="background: rgba(0, 229, 255, 0.05); border: 1.5px solid var(--accent-cyan); color: var(--accent-cyan); padding: 0.65rem 1.8rem; border-radius: 8px; cursor: pointer; font-family: 'Oswald', sans-serif; font-size: 1rem; display: flex; align-items: center; gap: 0.5rem; transition: all 0.2s ease; letter-spacing: 1px;">
-        &lt; BACK
-      </button>
-
-      <!-- Center Neon Indicator Dots -->
-      <div class="cyber-dots-container" style="display: flex; gap: 0.75rem; align-items: center;">
-        <span class="cyber-dot active-dot" onclick="goToEthicalSlide(0)"></span>
-        <span class="cyber-dot" onclick="goToEthicalSlide(1)"></span>
-        <span class="cyber-dot" onclick="goToEthicalSlide(2)"></span>
-        <span class="cyber-dot" onclick="goToEthicalSlide(3)"></span>
-        <span class="cyber-dot" onclick="goToEthicalSlide(4)"></span>
+    <!-- CARD 2: DATA OWNERSHIP -->
+    <div class="ethical-card-item" style="flex: 0 0 clamp(300px, 85vw, 680px); scroll-snap-align: start; background: rgba(8, 14, 23, 0.95); border: 1.5px solid var(--accent-cyan); border-radius: 14px; padding: 2.2rem 2.5rem; box-shadow: 0 0 25px rgba(0, 229, 255, 0.15), inset 0 0 15px rgba(0, 229, 255, 0.05); min-height: 300px; box-sizing: border-box;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem;">
+        <h4 style="color: var(--accent-cyan); font-family: 'Oswald', sans-serif; font-size: 1.5rem; display: flex; align-items: center; gap: 0.7rem; margin: 0; letter-spacing: 0.5px;">
+          <i data-lucide="database" style="width: 24px; height: 24px;"></i>
+          DATA OWNERSHIP
+        </h4>
+        <span style="font-family: monospace; font-size: 0.85rem; color: var(--accent-cyan); background: rgba(0, 229, 255, 0.1); padding: 0.35rem 0.8rem; border-radius: 6px; border: 1px solid rgba(0, 229, 255, 0.25);">ISSUE 02/05</span>
       </div>
+      <div class="slide-flex-body" style="display: grid; grid-template-columns: 1fr 240px; gap: 1.5rem; align-items: center;">
+        <div>
+          <p style="font-size: 1.05rem; color: #ffffff; line-height: 1.6; margin: 0 0 1rem 0; font-family: 'Playfair Display', serif;">
+            <strong>What it means:</strong> Big tech collects and profits from billions of users' data without full user understanding <i>(Zuboff, 2019)</i>[cite: 43].
+          </p>
+          <div style="background: rgba(0, 0, 0, 0.45); border-left: 4px solid var(--accent-cyan); padding: 0.8rem 1rem; border-radius: 0 0.5rem 0.5rem 0; font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">
+            <strong style="color: #fff;">Example:</strong> Cambridge Analytica scandal (2018) harvesting personal data[cite: 43].
+          </div>
+        </div>
+        <img src="imgs/data.avif" alt="Data Ownership" style="width: 100%; height: 160px; object-fit: cover; border-radius: 10px; border: 1.5px solid rgba(0, 229, 255, 0.35);">
+      </div>
+    </div>
 
-      <!-- Next Button -->
-      <button onclick="changeEthicalSlide(1)" class="cyber-card-btn" style="background: rgba(0, 229, 255, 0.05); border: 1.5px solid var(--accent-cyan); color: var(--accent-cyan); padding: 0.65rem 1.8rem; border-radius: 8px; cursor: pointer; font-family: 'Oswald', sans-serif; font-size: 1rem; display: flex; align-items: center; gap: 0.5rem; transition: all 0.2s ease; letter-spacing: 1px;">
-        NEXT &gt;
-      </button>
+    <!-- CARD 3: MISINFORMATION -->
+    <div class="ethical-card-item" style="flex: 0 0 clamp(300px, 85vw, 680px); scroll-snap-align: start; background: rgba(8, 14, 23, 0.95); border: 1.5px solid var(--accent-cyan); border-radius: 14px; padding: 2.2rem 2.5rem; box-shadow: 0 0 25px rgba(0, 229, 255, 0.15), inset 0 0 15px rgba(0, 229, 255, 0.05); min-height: 300px; box-sizing: border-box;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem;">
+        <h4 style="color: var(--accent-cyan); font-family: 'Oswald', sans-serif; font-size: 1.5rem; display: flex; align-items: center; gap: 0.7rem; margin: 0; letter-spacing: 0.5px;">
+          <i data-lucide="alert-octagon" style="width: 24px; height: 24px;"></i>
+          MISINFORMATION
+        </h4>
+        <span style="font-family: monospace; font-size: 0.85rem; color: var(--accent-cyan); background: rgba(0, 229, 255, 0.1); padding: 0.35rem 0.8rem; border-radius: 6px; border: 1px solid rgba(0, 229, 255, 0.25);">ISSUE 03/05</span>
+      </div>
+      <div class="slide-flex-body" style="display: grid; grid-template-columns: 1fr 240px; gap: 1.5rem; align-items: center;">
+        <div>
+          <p style="font-size: 1.05rem; color: #ffffff; line-height: 1.6; margin: 0 0 1rem 0; font-family: 'Playfair Display', serif;">
+            <strong>What it means:</strong> False or manipulated content causes real-world harm <i>(Wardle &amp; Derakhshan, 2017)</i>[cite: 44].
+          </p>
+          <div style="background: rgba(0, 0, 0, 0.45); border-left: 4px solid var(--accent-cyan); padding: 0.8rem 1rem; border-radius: 0 0.5rem 0.5rem 0; font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">
+            <strong style="color: #fff;">Examples:</strong> COVID-19 "infodemic"; paid trolls in PH; AI deepfakes[cite: 44].
+          </div>
+        </div>
+        <img src="imgs/misinfo.webp" alt="Misinformation" style="width: 100%; height: 160px; object-fit: cover; border-radius: 10px; border: 1.5px solid rgba(0, 229, 255, 0.35);">
+      </div>
+    </div>
 
+    <!-- CARD 4: DIGITAL LITERACY -->
+    <div class="ethical-card-item" style="flex: 0 0 clamp(300px, 85vw, 680px); scroll-snap-align: start; background: rgba(8, 14, 23, 0.95); border: 1.5px solid var(--accent-cyan); border-radius: 14px; padding: 2.2rem 2.5rem; box-shadow: 0 0 25px rgba(0, 229, 255, 0.15), inset 0 0 15px rgba(0, 229, 255, 0.05); min-height: 300px; box-sizing: border-box;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem;">
+        <h4 style="color: var(--accent-cyan); font-family: 'Oswald', sans-serif; font-size: 1.5rem; display: flex; align-items: center; gap: 0.7rem; margin: 0; letter-spacing: 0.5px;">
+          <i data-lucide="check-circle-2" style="width: 24px; height: 24px;"></i>
+          DIGITAL LITERACY
+        </h4>
+        <span style="font-family: monospace; font-size: 0.85rem; color: var(--accent-cyan); background: rgba(0, 229, 255, 0.1); padding: 0.35rem 0.8rem; border-radius: 6px; border: 1px solid rgba(0, 229, 255, 0.25);">ISSUE 04/05</span>
+      </div>
+      <div class="slide-flex-body" style="display: grid; grid-template-columns: 1fr 240px; gap: 1.5rem; align-items: center;">
+        <div>
+          <p style="font-size: 1.05rem; color: #ffffff; line-height: 1.6; margin: 0 0 1rem 0; font-family: 'Playfair Display', serif;">
+            <strong>What it means:</strong> Users must evaluate, verify, and create content responsibly <i>(Livingstone, 2004)</i>[cite: 45].
+          </p>
+          <div style="background: rgba(0, 0, 0, 0.45); border-left: 4px solid var(--accent-cyan); padding: 0.8rem 1rem; border-radius: 0 0.5rem 0.5rem 0; font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">
+            <strong style="color: #fff;">Examples:</strong> Check sources, spot fake images, protect personal data[cite: 45].
+          </div>
+        </div>
+        <img src="imgs/digi.webp" alt="Digital Literacy" style="width: 100%; height: 160px; object-fit: cover; border-radius: 10px; border: 1.5px solid rgba(0, 229, 255, 0.35);">
+      </div>
+    </div>
+
+    <!-- CARD 5: REGULATION -->
+    <div class="ethical-card-item" style="flex: 0 0 clamp(300px, 85vw, 680px); scroll-snap-align: start; background: rgba(8, 14, 23, 0.95); border: 1.5px solid var(--accent-cyan); border-radius: 14px; padding: 2.2rem 2.5rem; box-shadow: 0 0 25px rgba(0, 229, 255, 0.15), inset 0 0 15px rgba(0, 229, 255, 0.05); min-height: 300px; box-sizing: border-box;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem;">
+        <h4 style="color: var(--accent-cyan); font-family: 'Oswald', sans-serif; font-size: 1.5rem; display: flex; align-items: center; gap: 0.7rem; margin: 0; letter-spacing: 0.5px;">
+          <i data-lucide="scale" style="width: 24px; height: 24px;"></i>
+          REGULATION
+        </h4>
+        <span style="font-family: monospace; font-size: 0.85rem; color: var(--accent-cyan); background: rgba(0, 229, 255, 0.1); padding: 0.35rem 0.8rem; border-radius: 6px; border: 1px solid rgba(0, 229, 255, 0.25);">ISSUE 05/05</span>
+      </div>
+      <div class="slide-flex-body" style="display: grid; grid-template-columns: 1fr 240px; gap: 1.5rem; align-items: center;">
+        <div>
+          <p style="font-size: 1.05rem; color: #ffffff; line-height: 1.6; margin: 0 0 1rem 0; font-family: 'Playfair Display', serif;">
+            <strong>What it means:</strong> Platforms work across borders, but national laws differ, making rules unclear[cite: 46].
+          </p>
+          <div style="background: rgba(0, 0, 0, 0.45); border-left: 4px solid var(--accent-cyan); padding: 0.8rem 1rem; border-radius: 0 0.5rem 0.5rem 0; font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">
+            <strong style="color: #fff;">Examples:</strong> EU GDPR vs. Philippines Data Privacy Act of 2012[cite: 46].
+          </div>
+        </div>
+        <img src="imgs/regu.webp" alt="Regulation" style="width: 100%; height: 160px; object-fit: cover; border-radius: 10px; border: 1.5px solid rgba(0, 229, 255, 0.35);">
+      </div>
     </div>
 
   </div>
 
-  <!-- Styling for Dots & Hover Effects -->
+  <!-- STYLES FOR NEON HORIZONTAL SCROLLBAR & MOBILE RESPONSIVENESS -->
   <style>
-    .cyber-card-btn:hover {
-      background: var(--accent-cyan) !important;
-      color: #070c14 !important;
-      box-shadow: 0 0 16px var(--accent-cyan);
+    /* Glowing Cyan Horizontal Scrollbar */
+    #ethicalHorizontalViewport::-webkit-scrollbar {
+      height: 7px;
     }
-    
-    .cyber-dot {
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.2);
-      cursor: pointer;
-      transition: all 0.3s ease;
+    #ethicalHorizontalViewport::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
     }
-    .cyber-dot:hover {
-      background: rgba(0, 229, 255, 0.6);
-    }
-    .cyber-dot.active-dot {
+    #ethicalHorizontalViewport::-webkit-scrollbar-thumb {
       background: var(--accent-cyan);
+      border-radius: 10px;
       box-shadow: 0 0 12px var(--accent-cyan);
-      width: 32px;
-      border-radius: 12px;
     }
 
+    /* Mobile Phones Adjustment */
     @media screen and (max-width: 850px) {
       .slide-flex-body {
         grid-template-columns: 1fr !important;
         gap: 1.2rem !important;
       }
       .slide-flex-body img {
-        height: 160px !important;
+        height: 150px !important;
       }
-      .ethical-card-container {
-        padding: 1.5rem !important;
+      .ethical-card-item {
+        padding: 1.4rem 1.2rem !important;
       }
     }
   </style>
-
-  <!-- JavaScript Carousel Logic -->
-  <script>
-    let currentEthicalSlide = 0;
-
-    function renderEthicalSlide(index) {
-      const slides = document.querySelectorAll('#ethical-issues .ethical-slide');
-      const dots = document.querySelectorAll('#ethical-issues .cyber-dot');
-
-      if (index >= slides.length) currentEthicalSlide = 0;
-      else if (index < 0) currentEthicalSlide = slides.length - 1;
-      else currentEthicalSlide = index;
-
-      slides.forEach((slide, i) => {
-        if (i === currentEthicalSlide) {
-          slide.style.display = 'block';
-          slide.style.opacity = '1';
-        } else {
-          slide.style.display = 'none';
-          slide.style.opacity = '0';
-        }
-      });
-
-      dots.forEach((dot, i) => {
-        dot.classList.toggle('active-dot', i === currentEthicalSlide);
-      });
-    }
-
-    function changeEthicalSlide(direction) {
-      renderEthicalSlide(currentEthicalSlide + direction);
-    }
-
-    function goToEthicalSlide(index) {
-      renderEthicalSlide(index);
-    }
-  </script>
 </section>
 
 <!-- fixing -->
