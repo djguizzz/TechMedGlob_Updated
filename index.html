@@ -7866,182 +7866,207 @@ function selectDirective(index) {
   </div>
 </section>
 
-<!-- Subtopic: Presentation Recap (Vertical Timeline & Visual Spotlight Terminal) -->
-<section id="cyber-presentation-recap" style="padding-top: 2rem; padding-bottom: 4rem;">
-  <div class="lab" style="font-size: 0.9rem; margin-bottom: 0.5rem;">
-    <i data-lucide="rotate-ccw" style="color: var(--accent-cyan); width: 20px;"></i> EXECUTIVE SUMMARY
+<!-- Subtopic: Presentation Recap (Single Scrollable Cyberpunk Terminal Card) -->
+<section id="cyber-presentation-recap" style="padding-top: 2rem; padding-bottom: 4rem; width: 100%; box-sizing: border-box;">
+  
+  <!-- Section Badge & Title -->
+  <div class="lab" style="font-size: 0.9rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; color: var(--accent-cyan); font-family: monospace;">
+    <i data-lucide="rotate-ccw" style="color: var(--accent-cyan); width: 20px; height: 20px;"></i> EXECUTIVE SUMMARY
   </div>
-  <h2 style="color: var(--accent-cyan); font-family: 'Oswald', sans-serif; font-size: 2.2rem; margin-bottom: 0.5rem;">
+  
+  <h2 style="color: var(--accent-cyan); font-family: 'Oswald', sans-serif; font-size: clamp(1.8rem, 4vw, 2.2rem); margin-bottom: 0.5rem; text-transform: uppercase;">
     Quick Presentation Recap
   </h2>
-  <p style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 2.5rem;">
+  
+  <p style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 2rem; max-width: 800px; line-height: 1.5;">
     A quick, high-yield summary synthesizing the core domains of Technology, Media, and Globalization.
   </p>
 
-  <!-- Vertical Timeline Shell -->
-  <div style="position: relative; padding-left: 2.5rem; border-left: 3px dashed var(--accent-cyan); margin-left: 1.2rem; display: flex; flex-direction: column; gap: 2rem;">
-
-    <!-- ITEM 1: MEDIA & GLOBALIZATION -->
-    <div class="card" style="position: relative; border-color: var(--accent-cyan); background: linear-gradient(135deg, rgba(7, 12, 20, 0.98), rgba(0, 229, 255, 0.05)); border-left: 5px solid var(--accent-cyan); padding: 1.6rem; border-radius: 1.2rem; box-shadow: 0 0 25px rgba(0, 229, 255, 0.15);">
-      <!-- Glowing Node Pin -->
-      <div style="position: absolute; left: -3.4rem; top: 1.8rem; width: 24px; height: 24px; border-radius: 50%; background: #070c14; border: 3px solid var(--accent-cyan); box-shadow: 0 0 15px var(--accent-cyan); display: flex; align-items: center; justify-content: center;">
-        <div style="width: 8px; height: 8px; border-radius: 50%; background: var(--accent-cyan);"></div>
+  <!-- SINGLE MAIN CARD CONTAINER (Scrollable Window) -->
+  <div class="recap-single-card-container" style="position: relative; max-width: 1100px; margin: 0 auto; background: rgba(8, 14, 23, 0.95); border: 1.5px solid var(--accent-cyan); border-radius: 16px; padding: 2rem 2.5rem; box-shadow: 0 0 30px rgba(0, 229, 255, 0.18), inset 0 0 20px rgba(0, 229, 255, 0.05); box-sizing: border-box;">
+    
+    <!-- Top Terminal Status Bar -->
+    <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 1.2rem; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(0, 229, 255, 0.2); font-family: monospace; font-size: 0.8rem; color: var(--accent-cyan);">
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <span style="width: 8px; height: 8px; background: var(--accent-cyan); border-radius: 50%; display: inline-block; box-shadow: 0 0 8px var(--accent-cyan);"></span>
+        <span>STATUS: SYSTEM RECAP ARCHIVE</span>
       </div>
-
-      <div style="display: grid; grid-template-columns: 1fr 240px; gap: 1.5rem; align-items: center;">
-        <div>
-          <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.6rem;">
-            <div style="background: rgba(0, 229, 255, 0.15); padding: 0.4rem; border-radius: 0.4rem; color: var(--accent-cyan);">
-              <i data-lucide="tv" style="width: 20px; height: 20px;"></i>
-            </div>
-            <h3 style="color: #ffffff; font-family: 'Oswald', sans-serif; font-size: 1.3rem; margin: 0;">
-              1. MEDIA &amp; GLOBALIZATION
-            </h3>
-          </div>
-          <p style="font-size: 1.05rem; color: var(--text-main); font-family: 'Playfair Display', Georgia, serif; line-height: 1.7; margin: 0;">
-            Communication evolved from print and TV to social media, accelerating news and creating global culture. While enabling entertainment (K-pop, anime) and activism, it risks crowding out local cultures and spreading misinformation.
-          </p>
-        </div>
-
-        <!-- Visual Spotlight -->
-        <div style="position: relative; border-radius: 0.8rem; overflow: hidden; border: 1px solid var(--accent-cyan); box-shadow: 0 0 15px rgba(0, 229, 255, 0.2);">
-          <img src="14.webp" alt="Media & Globalization" style="width: 100%; height: 120px; object-fit: cover; filter: brightness(0.85);">
-          <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(7, 12, 20, 0.95), transparent); padding: 0.3rem; text-align: center;">
-            <span style="font-size: 0.7rem; color: var(--accent-cyan); font-family: monospace;">GLOBAL CULTURE FLOWS</span>
-          </div>
-        </div>
-      </div>
+      <span>SCROLL DOWN TO INSPECT (05 ITEMS)</span>
     </div>
 
-    <!-- ITEM 2: TECHNOLOGICAL GLOBALIZATION -->
-    <div class="card" style="position: relative; border-color: var(--accent-green); background: linear-gradient(135deg, rgba(7, 12, 20, 0.98), rgba(0, 255, 157, 0.05)); border-left: 5px solid var(--accent-green); padding: 1.6rem; border-radius: 1.2rem; box-shadow: 0 0 25px rgba(0, 255, 157, 0.15);">
-      <!-- Glowing Node Pin -->
-      <div style="position: absolute; left: -3.4rem; top: 1.8rem; width: 24px; height: 24px; border-radius: 50%; background: #070c14; border: 3px solid var(--accent-green); box-shadow: 0 0 15px var(--accent-green); display: flex; align-items: center; justify-content: center;">
-        <div style="width: 8px; height: 8px; border-radius: 50%; background: var(--accent-green);"></div>
-      </div>
+    <!-- INNER SCROLLABLE BOX -->
+    <div class="recap-scroll-viewport" style="max-height: 520px; overflow-y: auto; padding-right: 1.2rem; display: flex; flex-direction: column; gap: 1.8rem;">
 
-      <div style="display: grid; grid-template-columns: 1fr 240px; gap: 1.5rem; align-items: center;">
-        <div>
-          <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.6rem;">
-            <div style="background: rgba(0, 255, 157, 0.15); padding: 0.4rem; border-radius: 0.4rem; color: var(--accent-green);">
-              <i data-lucide="cpu" style="width: 20px; height: 20px;"></i>
+      <!-- ITEM 1: MEDIA & GLOBALIZATION -->
+      <div class="recap-item-box" style="background: linear-gradient(135deg, rgba(7, 12, 20, 0.9), rgba(0, 229, 255, 0.05)); border: 1px solid rgba(0, 229, 255, 0.3); border-left: 5px solid var(--accent-cyan); padding: 1.5rem; border-radius: 1rem;">
+        <div class="recap-grid-layout" style="display: grid; grid-template-columns: 1fr 240px; gap: 1.5rem; align-items: center;">
+          <div>
+            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.6rem;">
+              <div style="background: rgba(0, 229, 255, 0.15); padding: 0.4rem; border-radius: 0.4rem; color: var(--accent-cyan); display: flex;">
+                <i data-lucide="tv" style="width: 20px; height: 20px;"></i>
+              </div>
+              <h3 style="color: #ffffff; font-family: 'Oswald', sans-serif; font-size: 1.3rem; margin: 0; letter-spacing: 0.5px;">
+                1. MEDIA &amp; GLOBALIZATION
+              </h3>
             </div>
-            <h3 style="color: #ffffff; font-family: 'Oswald', sans-serif; font-size: 1.3rem; margin: 0;">
-              2. TECHNOLOGICAL GLOBALIZATION
-            </h3>
+            <p style="font-size: 1rem; color: var(--text-main); font-family: 'Playfair Display', Georgia, serif; line-height: 1.6; margin: 0;">
+              Communication evolved from print and TV to social media, accelerating news and creating global culture. While enabling entertainment (K-pop, anime) and activism, it risks crowding out local cultures and spreading misinformation[cite: 35].
+            </p>
           </div>
-          <p style="font-size: 1.05rem; color: var(--text-main); font-family: 'Playfair Display', Georgia, serif; line-height: 1.7; margin: 0;">
-            Faster internet, global shipping, and AI connect markets worldwide. Technology drives supply chains, remote work, and e-commerce, but poses threats of job displacement through automation.
-          </p>
-        </div>
-
-        <!-- Visual Spotlight -->
-        <div style="position: relative; border-radius: 0.8rem; overflow: hidden; border: 1px solid var(--accent-green); box-shadow: 0 0 15px rgba(0, 255, 157, 0.2);">
-          <img src="digi.webp" alt="Technological Globalization" style="width: 100%; height: 120px; object-fit: cover; filter: brightness(0.85);">
-          <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(7, 12, 20, 0.95), transparent); padding: 0.3rem; text-align: center;">
-            <span style="font-size: 0.7rem; color: var(--accent-green); font-family: monospace;">AUTOMATED MARKET NODES</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ITEM 3: SOCIAL MEDIA SHIFT -->
-    <div class="card" style="position: relative; border-color: #a855f7; background: linear-gradient(135deg, rgba(7, 12, 20, 0.98), rgba(168, 85, 247, 0.05)); border-left: 5px solid #a855f7; padding: 1.6rem; border-radius: 1.2rem; box-shadow: 0 0 25px rgba(168, 85, 247, 0.15);">
-      <!-- Glowing Node Pin -->
-      <div style="position: absolute; left: -3.4rem; top: 1.8rem; width: 24px; height: 24px; border-radius: 50%; background: #070c14; border: 3px solid #a855f7; box-shadow: 0 0 15px #a855f7; display: flex; align-items: center; justify-content: center;">
-        <div style="width: 8px; height: 8px; border-radius: 50%; background: #a855f7;"></div>
-      </div>
-
-      <div style="display: grid; grid-template-columns: 1fr 240px; gap: 1.5rem; align-items: center;">
-        <div>
-          <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.6rem;">
-            <div style="background: rgba(168, 85, 247, 0.15); padding: 0.4rem; border-radius: 0.4rem; color: #a855f7;">
-              <i data-lucide="share-2" style="width: 20px; height: 20px;"></i>
+          <!-- Visual Spotlight -->
+          <div style="position: relative; border-radius: 0.8rem; overflow: hidden; border: 1px solid var(--accent-cyan); box-shadow: 0 0 15px rgba(0, 229, 255, 0.2);">
+            <img src="imgs/14.webp" alt="Media &amp; Globalization" style="width: 100%; height: 125px; object-fit: cover; filter: brightness(0.85); display: block;">
+            <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(7, 12, 20, 0.95), transparent); padding: 0.3rem; text-align: center;">
+              <span style="font-size: 0.7rem; color: var(--accent-cyan); font-family: monospace;">GLOBAL CULTURE FLOWS</span>
             </div>
-            <h3 style="color: #ffffff; font-family: 'Oswald', sans-serif; font-size: 1.3rem; margin: 0;">
-              3. SOCIAL MEDIA SHIFT
-            </h3>
-          </div>
-          <p style="font-size: 1.05rem; color: var(--text-main); font-family: 'Playfair Display', Georgia, serif; line-height: 1.7; margin: 0;">
-            Platforms shifted from connecting friends via personal networks (the <strong>Social Graph</strong>) to feeding users algorithmic recommendations tailored to engagement (the <strong>Interest Graph</strong>).
-          </p>
-        </div>
-
-        <!-- Visual Spotlight -->
-        <div style="position: relative; border-radius: 0.8rem; overflow: hidden; border: 1px solid #a855f7; box-shadow: 0 0 15px rgba(168, 85, 247, 0.2);">
-          <img src="2.avif" alt="Social Media Shift" style="width: 100%; height: 120px; object-fit: cover; filter: brightness(0.85);">
-          <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(7, 12, 20, 0.95), transparent); padding: 0.3rem; text-align: center;">
-            <span style="font-size: 0.7rem; color: #a855f7; font-family: monospace;">ALGORITHMIC CURATION</span>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- ITEM 4: INFORMATION DISORDER -->
-    <div class="card" style="position: relative; border-color: #ff5555; background: linear-gradient(135deg, rgba(7, 12, 20, 0.98), rgba(255, 85, 85, 0.05)); border-left: 5px solid #ff5555; padding: 1.6rem; border-radius: 1.2rem; box-shadow: 0 0 25px rgba(255, 85, 85, 0.15);">
-      <!-- Glowing Node Pin -->
-      <div style="position: absolute; left: -3.4rem; top: 1.8rem; width: 24px; height: 24px; border-radius: 50%; background: #070c14; border: 3px solid #ff5555; box-shadow: 0 0 15px #ff5555; display: flex; align-items: center; justify-content: center;">
-        <div style="width: 8px; height: 8px; border-radius: 50%; background: #ff5555;"></div>
-      </div>
-
-      <div style="display: grid; grid-template-columns: 1fr 240px; gap: 1.5rem; align-items: center;">
-        <div>
-          <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.6rem;">
-            <div style="background: rgba(255, 85, 85, 0.15); padding: 0.4rem; border-radius: 0.4rem; color: #ff5555;">
-              <i data-lucide="shield-alert" style="width: 20px; height: 20px;"></i>
+      <!-- ITEM 2: TECHNOLOGICAL GLOBALIZATION -->
+      <div class="recap-item-box" style="background: linear-gradient(135deg, rgba(7, 12, 20, 0.9), rgba(0, 255, 157, 0.05)); border: 1px solid rgba(0, 255, 157, 0.3); border-left: 5px solid var(--accent-green); padding: 1.5rem; border-radius: 1rem;">
+        <div class="recap-grid-layout" style="display: grid; grid-template-columns: 1fr 240px; gap: 1.5rem; align-items: center;">
+          <div>
+            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.6rem;">
+              <div style="background: rgba(0, 255, 157, 0.15); padding: 0.4rem; border-radius: 0.4rem; color: var(--accent-green); display: flex;">
+                <i data-lucide="cpu" style="width: 20px; height: 20px;"></i>
+              </div>
+              <h3 style="color: #ffffff; font-family: 'Oswald', sans-serif; font-size: 1.3rem; margin: 0; letter-spacing: 0.5px;">
+                2. TECHNOLOGICAL GLOBALIZATION
+              </h3>
             </div>
-            <h3 style="color: #ffffff; font-family: 'Oswald', sans-serif; font-size: 1.3rem; margin: 0;">
-              4. INFORMATION DISORDER
-            </h3>
+            <p style="font-size: 1rem; color: var(--text-main); font-family: 'Playfair Display', Georgia, serif; line-height: 1.6; margin: 0;">
+              Faster internet, global shipping, and AI connect markets worldwide. Technology drives supply chains, remote work, and e-commerce, but poses threats of job displacement through automation[cite: 36].
+            </p>
           </div>
-          <p style="font-size: 1.05rem; color: var(--text-main); font-family: 'Playfair Display', Georgia, serif; line-height: 1.7; margin: 0;">
-            Falsehoods spread faster than truth due to human tendencies to share novel, emotional stories. Countering this requires digital literacy tactics: cross-checking sources, lateral reading, and pausing before sharing.
-          </p>
-        </div>
-
-        <!-- Visual Spotlight -->
-        <div style="position: relative; border-radius: 0.8rem; overflow: hidden; border: 1px solid #ff5555; box-shadow: 0 0 15px rgba(255, 85, 85, 0.2);">
-          <img src="8.avif" alt="Information Disorder" style="width: 100%; height: 120px; object-fit: cover; filter: brightness(0.85);">
-          <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(7, 12, 20, 0.95), transparent); padding: 0.3rem; text-align: center;">
-            <span style="font-size: 0.7rem; color: #ff5555; font-family: monospace;">VIRAL MISINFORMATION</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ITEM 5: THE DIGITAL DIVIDE -->
-    <div class="card" style="position: relative; border-color: #ffaa00; background: linear-gradient(135deg, rgba(7, 12, 20, 0.98), rgba(255, 170, 0, 0.05)); border-left: 5px solid #ffaa00; padding: 1.6rem; border-radius: 1.2rem; box-shadow: 0 0 25px rgba(255, 170, 0, 0.15);">
-      <!-- Glowing Node Pin -->
-      <div style="position: absolute; left: -3.4rem; top: 1.8rem; width: 24px; height: 24px; border-radius: 50%; background: #070c14; border: 3px solid #ffaa00; box-shadow: 0 0 15px #ffaa00; display: flex; align-items: center; justify-content: center;">
-        <div style="width: 8px; height: 8px; border-radius: 50%; background: #ffaa00;"></div>
-      </div>
-
-      <div style="display: grid; grid-template-columns: 1fr 240px; gap: 1.5rem; align-items: center;">
-        <div>
-          <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.6rem;">
-            <div style="background: rgba(255, 170, 0, 0.15); padding: 0.4rem; border-radius: 0.4rem; color: #ffaa00;">
-              <i data-lucide="wifi-off" style="width: 20px; height: 20px;"></i>
+          <!-- Visual Spotlight -->
+          <div style="position: relative; border-radius: 0.8rem; overflow: hidden; border: 1px solid var(--accent-green); box-shadow: 0 0 15px rgba(0, 255, 157, 0.2);">
+            <img src="imgs/digi.webp" alt="Technological Globalization" style="width: 100%; height: 125px; object-fit: cover; filter: brightness(0.85); display: block;">
+            <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(7, 12, 20, 0.95), transparent); padding: 0.3rem; text-align: center;">
+              <span style="font-size: 0.7rem; color: var(--accent-green); font-family: monospace;">AUTOMATED MARKET NODES</span>
             </div>
-            <h3 style="color: #ffffff; font-family: 'Oswald', sans-serif; font-size: 1.3rem; margin: 0;">
-              5. THE DIGITAL DIVIDE
-            </h3>
-          </div>
-          <p style="font-size: 1.05rem; color: var(--text-main); font-family: 'Playfair Display', Georgia, serif; line-height: 1.7; margin: 0;">
-            Around 2.2 billion people are not using the internet. Disparities in internet access, hardware availability, and digital literacy—especially between urban hubs and rural communities—drive systemic inequality in education and economic mobility.
-          </p>
-        </div>
-
-        <!-- Visual Spotlight -->
-        <div style="position: relative; border-radius: 0.8rem; overflow: hidden; border: 1px solid #ffaa00; box-shadow: 0 0 15px rgba(255, 170, 0, 0.2);">
-          <img src="13.webp" alt="The Digital Divide" style="width: 100%; height: 120px; object-fit: cover; filter: brightness(0.85);">
-          <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(7, 12, 20, 0.95), transparent); padding: 0.3rem; text-align: center;">
-            <span style="font-size: 0.7rem; color: #ffaa00; font-family: monospace;">INFRASTRUCTURE GAP</span>
           </div>
         </div>
       </div>
-    </div>
 
+      <!-- ITEM 3: SOCIAL MEDIA SHIFT -->
+      <div class="recap-item-box" style="background: linear-gradient(135deg, rgba(7, 12, 20, 0.9), rgba(168, 85, 247, 0.05)); border: 1px solid rgba(168, 85, 247, 0.3); border-left: 5px solid #a855f7; padding: 1.5rem; border-radius: 1rem;">
+        <div class="recap-grid-layout" style="display: grid; grid-template-columns: 1fr 240px; gap: 1.5rem; align-items: center;">
+          <div>
+            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.6rem;">
+              <div style="background: rgba(168, 85, 247, 0.15); padding: 0.4rem; border-radius: 0.4rem; color: #a855f7; display: flex;">
+                <i data-lucide="share-2" style="width: 20px; height: 20px;"></i>
+              </div>
+              <h3 style="color: #ffffff; font-family: 'Oswald', sans-serif; font-size: 1.3rem; margin: 0; letter-spacing: 0.5px;">
+                3. SOCIAL MEDIA SHIFT
+              </h3>
+            </div>
+            <p style="font-size: 1rem; color: var(--text-main); font-family: 'Playfair Display', Georgia, serif; line-height: 1.6; margin: 0;">
+              Platforms shifted from connecting friends via personal networks (the <strong>Social Graph</strong>) to feeding users algorithmic recommendations tailored to engagement (the <strong>Interest Graph</strong>)[cite: 38].
+            </p>
+          </div>
+          <!-- Visual Spotlight -->
+          <div style="position: relative; border-radius: 0.8rem; overflow: hidden; border: 1px solid #a855f7; box-shadow: 0 0 15px rgba(168, 85, 247, 0.2);">
+            <img src="imgs/2.avif" alt="Social Media Shift" style="width: 100%; height: 125px; object-fit: cover; filter: brightness(0.85); display: block;">
+            <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(7, 12, 20, 0.95), transparent); padding: 0.3rem; text-align: center;">
+              <span style="font-size: 0.7rem; color: #a855f7; font-family: monospace;">ALGORITHMIC CURATION</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 4: INFORMATION DISORDER -->
+      <div class="recap-item-box" style="background: linear-gradient(135deg, rgba(7, 12, 20, 0.9), rgba(255, 85, 85, 0.05)); border: 1px solid rgba(255, 85, 85, 0.3); border-left: 5px solid #ff5555; padding: 1.5rem; border-radius: 1rem;">
+        <div class="recap-grid-layout" style="display: grid; grid-template-columns: 1fr 240px; gap: 1.5rem; align-items: center;">
+          <div>
+            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.6rem;">
+              <div style="background: rgba(255, 85, 85, 0.15); padding: 0.4rem; border-radius: 0.4rem; color: #ff5555; display: flex;">
+                <i data-lucide="shield-alert" style="width: 20px; height: 20px;"></i>
+              </div>
+              <h3 style="color: #ffffff; font-family: 'Oswald', sans-serif; font-size: 1.3rem; margin: 0; letter-spacing: 0.5px;">
+                4. INFORMATION DISORDER
+              </h3>
+            </div>
+            <p style="font-size: 1rem; color: var(--text-main); font-family: 'Playfair Display', Georgia, serif; line-height: 1.6; margin: 0;">
+              Falsehoods spread faster than truth due to human tendencies to share novel, emotional stories. Countering this requires digital literacy tactics: cross-checking sources, lateral reading, and pausing before sharing[cite: 39].
+            </p>
+          </div>
+          <!-- Visual Spotlight -->
+          <div style="position: relative; border-radius: 0.8rem; overflow: hidden; border: 1px solid #ff5555; box-shadow: 0 0 15px rgba(255, 85, 85, 0.2);">
+            <img src="imgs/8.avif" alt="Information Disorder" style="width: 100%; height: 125px; object-fit: cover; filter: brightness(0.85); display: block;">
+            <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(7, 12, 20, 0.95), transparent); padding: 0.3rem; text-align: center;">
+              <span style="font-size: 0.7rem; color: #ff5555; font-family: monospace;">VIRAL MISINFORMATION</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 5: THE DIGITAL DIVIDE -->
+      <div class="recap-item-box" style="background: linear-gradient(135deg, rgba(7, 12, 20, 0.9), rgba(255, 170, 0, 0.05)); border: 1px solid rgba(255, 170, 0, 0.3); border-left: 5px solid #ffaa00; padding: 1.5rem; border-radius: 1rem;">
+        <div class="recap-grid-layout" style="display: grid; grid-template-columns: 1fr 240px; gap: 1.5rem; align-items: center;">
+          <div>
+            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.6rem;">
+              <div style="background: rgba(255, 170, 0, 0.15); padding: 0.4rem; border-radius: 0.4rem; color: #ffaa00; display: flex;">
+                <i data-lucide="wifi-off" style="width: 20px; height: 20px;"></i>
+              </div>
+              <h3 style="color: #ffffff; font-family: 'Oswald', sans-serif; font-size: 1.3rem; margin: 0; letter-spacing: 0.5px;">
+                5. THE DIGITAL DIVIDE
+              </h3>
+            </div>
+            <p style="font-size: 1rem; color: var(--text-main); font-family: 'Playfair Display', Georgia, serif; line-height: 1.6; margin: 0;">
+              Around 2.2 billion people are not using the internet. Disparities in internet access, hardware availability, and digital literacy—especially between urban hubs and rural communities—drive systemic inequality in education and economic mobility[cite: 41].
+            </p>
+          </div>
+          <!-- Visual Spotlight -->
+          <div style="position: relative; border-radius: 0.8rem; overflow: hidden; border: 1px solid #ffaa00; box-shadow: 0 0 15px rgba(255, 170, 0, 0.2);">
+            <img src="imgs/13.webp" alt="The Digital Divide" style="width: 100%; height: 125px; object-fit: cover; filter: brightness(0.85); display: block;">
+            <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(7, 12, 20, 0.95), transparent); padding: 0.3rem; text-align: center;">
+              <span style="font-size: 0.7rem; color: #ffaa00; font-family: monospace;">INFRASTRUCTURE GAP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
+
+  <!-- STYLES FOR SCROLLBAR & MOBILE RESPONSIVENESS -->
+  <style>
+    /* Neon Custom Scrollbar Fix */
+    .recap-scroll-viewport::-webkit-scrollbar {
+      width: 6px;
+    }
+    .recap-scroll-viewport::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 8px;
+    }
+    .recap-scroll-viewport::-webkit-scrollbar-thumb {
+      background: var(--accent-cyan);
+      border-radius: 8px;
+      box-shadow: 0 0 10px var(--accent-cyan);
+    }
+    .recap-scroll-viewport::-webkit-scrollbar-thumb:hover {
+      background: #80f4ff;
+    }
+
+    /* Mobile Responsive Layout Switch */
+    @media screen and (max-width: 768px) {
+      .recap-single-card-container {
+        padding: 1.5rem 1.2rem !important;
+      }
+      .recap-grid-layout {
+        grid-template-columns: 1fr !important;
+        gap: 1.2rem !important;
+      }
+      .recap-grid-layout img {
+        height: 140px !important;
+      }
+      .recap-scroll-viewport {
+        max-height: 480px !important;
+        padding-right: 0.5rem !important;
+      }
+    }
+  </style>
 </section>
 
 <!-- Subtopic: Academic References & Bibliography (Cyber Console Library Terminal) -->
